@@ -187,19 +187,6 @@ group by
 	a.appointmentdate ; 
 
 
---14. Using a temporary query structure, calculate the average, minimum, and maximum total bill amount, and then return these values in a single result set.
-
-with bill_summary as (
-    select 
-        avg(totalamount) as avg_bill,
-        min(totalamount) as min_bill,
-        max(totalamount) as max_bill
-    from bills
-)
-select avg_bill, min_bill, max_bill
-from bill_summary;
-
-
 --15. Build a query that identifies all patients who currently have an outstanding balance, based on information from admissions and billing records.
 
  select  
