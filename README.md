@@ -12,7 +12,7 @@ Includes:
 - Ranking
 - Insert, update, and delete DML operations
 
-Queries: 1–13, 15–19 
+Queries: 1–3, 5-13, 15–19 
 
 ---
 
@@ -20,7 +20,7 @@ Queries: 1–13, 15–19
 Uses PostgreSQL CTE for:
 - Summary statistics (AVG, MIN, MAX)
 
-Query: 14 
+Query: 14 , 4
 
 ---
 
