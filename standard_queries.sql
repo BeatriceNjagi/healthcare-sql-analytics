@@ -165,7 +165,7 @@ select
 	a.patientid, 
 	a.appointmentid, 
 	a.appointmentdate,
-	dense_rank() over ( partition by a.patientid  order by a.appointmentdate desc)
+	row_number() over ( partition by a.patientid  order by a.appointmentdate desc)
 from 
 	appointments a
 group by 
